@@ -1,0 +1,134 @@
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(168, 158, 158);
+}
+
+#container {
+  background:#ddcfcb;
+  width:960px;
+  margin:0 auto;
+  overflow: hidden;
+  border: #666;
+  border-radius: 15px;
+}
+#sidebar {
+  background:#ddcfcb;
+  float:left;
+  width:340px;
+}
+#content {
+  background:#d1c4c4;
+  float:left;
+  width:620px;
+}
+
+.nav{
+  background:#ddcfcb;
+  float:left;
+  width:340px;
+  flex-direction: column;
+}
+
+  .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px; 
+    border: 3px solid rgb(212, 200, 196); 
+    box-shadow: 0 0 7px #666;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #b1a2a2;
+    border-collapse: collapse; 
+  }
+  .table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef34;
+    border: 1px solid #a59494;
+  }
+  .table td {
+    border: 1px solid #a59393;
+    padding: 5px;
+  }
+
+  .size{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .fonts{
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #container {
+      background:#ddcfcb;
+      width:400px;
+      margin:0 auto;
+      overflow: hidden;
+    }
+    #sidebar {
+      background:#ddcfcb;
+      float:left;
+      width:280px;
+    }
+    #content {
+      background:#d1c4c4;
+      float:left;
+      width:400px;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(168, 161, 161)
+  }
+
+  .navi{
+    color: black;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+      flex-flow: column wrap;
+      align-items: center;
+      display: flex;
+    }
+  }
+  
+  @media all and (max-width: 500px) {
+    .navigation {
+      flex-direction: column;
+      display: flex;
+      text-align: left;
+      font-size: small;
+    }
+  }
+
+
+
+
+
+  
